@@ -69,6 +69,6 @@ Full contributing [guidelines are covered here](.github/how_to_contribute.md).
 
 | Name | Description |
 |------|-------------|
-| volume_id | The ID list of all EVS volume resources |
+| volume_id | The ID of the first volume |
 | volume_ids | The ID list of all EVS volume resources |
 | volume_wwns | The unique identifier list for all EVS volume resources mounting |
