@@ -54,7 +54,7 @@ variable "is_volume_create" {
 }
 
 variable "availability_zone" {
-  description = "The availability zone where the EVS volume"
+  description = "The availability zone where the EVS volume is located"
 
   type = string
 }
@@ -88,35 +88,35 @@ variable "enterprise_project_id" {
 }
 
 variable "volume_type" {
-  description = "The type of the EVS volume"
+  description = "The type of the EVS volumes"
 
   type    = string
   default = "SSD"
 }
 
 variable "volume_size" {
-  description = "The capacity of the EVS volume"
+  description = "The capacity of the EVS volumes"
 
   type    = number
   default = 100
 }
 
 variable "image_id" {
-  description = "The ID of the image that used to create the EVS volume"
+  description = "The ID of the image that used to create the EVS volumes"
 
   type    = string
   default = null
 }
 
 variable "backup_id" {
-  description = "The ID of the backup that used to create the EVS volume"
+  description = "The ID of the backup that used to create the EVS volumes"
 
   type    = string
   default = null
 }
 
 variable "snapshot_id" {
-  description = "The ID of the snapshot that used to create the EVS volume"
+  description = "The ID of the snapshot that used to create the EVS volumes"
 
   type    = string
   default = null
@@ -130,21 +130,21 @@ variable "is_multiattach" {
 }
 
 variable "encryption_kms_id" {
-  description = "The ID of the KMS key that used to encryption the EVS volume"
+  description = "The ID of the KMS key that used to encryption the EVS volumes"
 
   type    = string
   default = null
 }
 
 variable "device_type" {
-  description = "The device type of the disk that the EVS volume will be create"
+  description = "The device type of the disk that the EVS volumes will be create"
 
   type    = string
   default = null
 }
 
 variable "is_cascade_delete" {
-  description = "Whether delete all snapshots associated with the EVS volume while volume deleted"
+  description = "Whether delete all snapshots associated with the EVS volumes while volume deleted"
 
   type    = bool
   default = false
