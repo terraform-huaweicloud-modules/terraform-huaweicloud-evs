@@ -1,7 +1,7 @@
 data "huaweicloud_availability_zones" "this" {}
 
 module "evs_service" {
-  source = "../.."
+  source = "../../modules/evs-volume-simple"
 
   availability_zone = var.availability_zone == null ? try(data.huaweicloud_availability_zones.this.names[0], "") : var.availability_zone
 
