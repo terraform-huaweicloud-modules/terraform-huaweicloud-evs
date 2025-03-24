@@ -1,0 +1,16 @@
+{
+  "charging_mode": "postPaid",
+  "evs_availability_zone": "",
+  "evs_volume_type": "GPSSD2",
+  "evs_iops": 3000,
+  "evs_throughput": 125,
+  "evs_device_type": "VBD",
+  "evs_name": "test-volume-name",
+  "evs_description": "test description",
+  "evs_size": 20,
+  "evs_multiattach": false,
+  "evs_tags": {
+    "foo": "bar",
+    "key": "value"
+  }
+}
