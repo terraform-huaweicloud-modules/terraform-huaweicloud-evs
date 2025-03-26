@@ -84,7 +84,7 @@ No module.
 | volume_auto_renew            | Whether auto-renew is enabled for EVS volume                                                                     | `string`                 | `null`  |                         N                         |
 | is_volume_create             | Controls whether the EVS volumes should be created (it affects all EVS related resources under this module)      | `bool`                   | `true`  |                         N                         |
 | volume_availability_zone     | The availability zone for the EVS volume                                                                         | `string`                 | `null`  | Y (Unless is_volume_create is specified as false) |
-| volume_volume_type           | The EVS volume type                                                                                              | `string`                 | `null`  | Y (Unless is_volume_create is specified as false) |
+| volume_type                  | The EVS volume type                                                                                              | `string`                 | `null`  | Y (Unless is_volume_create is specified as false) |
 | volume_server_id             | The server ID to which the EVS volume is to be mounted                                                           | `string`                 | `null`  |                         N                         |
 | volume_iops                  | The IOPS(Input/Output Operations Per Second) for the EVS volume                                                  | `number`                 | `null`  |                         N                         |
 | volume_throughput            | The throughput for the EVS volume                                                                                | `number`                 | `null`  |                         N                         |
@@ -107,7 +107,7 @@ No module.
 
 | Name                          | Description                                                   |
 |-------------------------------|---------------------------------------------------------------|
-| volume_volume_id              | The ID of the EVS volume                                      |
+| volume_id                     | The ID of the EVS volume                                      |
 | volume_wwn                    | The unique identifier used for mounting the EVS volume        |
 | volume_dedicated_storage_name | The name of the DSS storage pool accommodating the EVS volume |
 | volume_status                 | The EVS volume status                                         |

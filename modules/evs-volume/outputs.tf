@@ -1,4 +1,4 @@
-output "volume_volume_id" {
+output "volume_id" {
   description = "The ID of the EVS volume."
   value       = try(huaweicloud_evs_volume.this[0].id, "")
 }

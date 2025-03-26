@@ -1,7 +1,9 @@
 {
-  "volume_type": "GPSSD2",
-  "volume_iops": 3000,
-  "volume_throughput": 125,
+  "volume_charging_mode": "prePaid",
+  "volume_period_unit": "month",
+  "volume_period": 1,
+  "volume_auto_renew": "true",
+  "volume_type": "GPSSD",
   "volume_device_type": "VBD",
   "volume_name": "test-volume-name",
   "volume_description": "test description",

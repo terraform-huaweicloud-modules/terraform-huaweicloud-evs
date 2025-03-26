@@ -24,11 +24,9 @@ Run `terraform destroy -var-file=variables.json` when you don't need these resou
 ## Modules
 
 <!-- markdownlint-disable MD013 -->
-
 | Name       | Source                                                         | Version |
 |------------|----------------------------------------------------------------|---------|
 | evs_volume | [../../modules/evs-volume](../../modules/evs-volume/README.md) | N/A     |
-
 <!-- markdownlint-enable MD013 -->
 
 ## Resources
@@ -43,8 +41,8 @@ Run `terraform destroy -var-file=variables.json` when you don't need these resou
 <!-- markdownlint-disable MD013 -->
 | Name                     | Description                                                     | Value                                                 |
 |--------------------------|-----------------------------------------------------------------|-------------------------------------------------------|
-| volume_availability_zone | The availability zone for the EVS volume                        | `"cn-north-4"`                                        |
-| volume_volume_type       | The EVS volume type                                             | `"GPSSD2"`                                            |
+| volume_availability_zone | The availability zone for the EVS volume                        | `"cn-north-4a"`                                       |
+| volume_type              | The EVS volume type                                             | `"GPSSD2"`                                            |
 | volume_iops              | The IOPS(Input/Output Operations Per Second) for the EVS volume | `3000`                                                |
 | volume_throughput        | The throughput for the EVS volume                               | `125`                                                 |
 | volume_device_type       | The device type for the EVS volume                              | `"VBD"`                                               |
@@ -57,8 +55,8 @@ Run `terraform destroy -var-file=variables.json` when you don't need these resou
 
 ## Outputs
 
-| Name             | Description                                            |
-|------------------|--------------------------------------------------------|
-| volume_volume_id | The ID of the EVS volume                               |
-| volume_wwn       | The unique identifier used for mounting the EVS volume |
-| volume_status    | The EVS volume status                                  |
+| Name          | Description                                            |
+|---------------|--------------------------------------------------------|
+| volume_id     | The ID of the EVS volume                               |
+| volume_wwn    | The unique identifier used for mounting the EVS volume |
+| volume_status | The EVS volume status                                  |

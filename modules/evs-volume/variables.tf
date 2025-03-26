@@ -43,7 +43,7 @@ variable "volume_availability_zone" {
   default     = null
 }
 
-variable "volume_volume_type" {
+variable "volume_type" {
   type        = string
   description = "The EVS volume type."
   default     = null
