@@ -9,7 +9,7 @@ resource "huaweicloud_evs_volume" "this" {
 
   # volume parameters
   availability_zone     = var.volume_availability_zone
-  volume_type           = var.volume_volume_type
+  volume_type           = var.volume_type
   server_id             = var.volume_server_id
   iops                  = var.volume_iops
   throughput            = var.volume_throughput

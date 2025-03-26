@@ -1,4 +1,32 @@
 ######################################################################
+# Configurations of prepaid parameters
+######################################################################
+
+variable "volume_charging_mode" {
+  type        = string
+  description = "The charging mode of the EVS volume."
+  default     = null
+}
+
+variable "volume_period_unit" {
+  type        = string
+  description = "The charging period unit of the EVS volume."
+  default     = null
+}
+
+variable "volume_period" {
+  type        = number
+  description = "The charging period of the EVS volume."
+  default     = null
+}
+
+variable "volume_auto_renew" {
+  type        = string
+  description = "Whether auto-renew is enabled for EVS volume."
+  default     = null
+}
+
+######################################################################
 # Configurations of EVS volume
 ######################################################################
 variable "volume_availability_zone" {
@@ -10,18 +38,6 @@ variable "volume_availability_zone" {
 variable "volume_type" {
   type        = string
   description = "The EVS volume type."
-  default     = null
-}
-
-variable "volume_iops" {
-  type        = number
-  description = "The IOPS(Input/Output Operations Per Second) for the EVS volume."
-  default     = null
-}
-
-variable "volume_throughput" {
-  type        = number
-  description = "The throughput for the EVS volume."
   default     = null
 }
 
