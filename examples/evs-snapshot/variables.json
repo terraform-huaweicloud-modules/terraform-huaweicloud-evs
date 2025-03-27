@@ -1,0 +1,20 @@
+{
+  "volume_type": "GPSSD2",
+  "volume_iops": 3000,
+  "volume_throughput": 125,
+  "volume_device_type": "VBD",
+  "volume_name": "test-volume-name",
+  "volume_description": "test description",
+  "volume_size": 20,
+  "volume_multiattach": false,
+  "volume_tags": {
+    "foo": "bar",
+    "key": "value"
+  },
+  "snapshot_name": "test-snapshot-name",
+  "snapshot_metadata": {
+    "meta_key": "meta_value"
+  },
+  "snapshot_description": "test description",
+  "snapshot_force": true
+}
