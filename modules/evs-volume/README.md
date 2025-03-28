@@ -9,7 +9,7 @@ Manages the EVS volume resource.
 Please make sure that the corresponding module script has been defined in your `.tf` file, like this:
 
 ```hcl
-# Manages a EVS volume.
+# Manages an EVS volume.
 module "evs_volume" {
   source = "github.com/terraform-huaweicloud-modules/terraform-huaweicloud-evs/modules/evs-volume"
 
